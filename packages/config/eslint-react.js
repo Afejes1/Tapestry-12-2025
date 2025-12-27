@@ -1,5 +1,4 @@
 module.exports = {
-  extends: ['./eslint-base.js'],
   env: {
     browser: true,
     es6: true,
@@ -10,11 +9,7 @@ module.exports = {
     },
   },
   plugins: ['react', 'react-hooks'],
-  extends: [
-    './eslint-base.js',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-  ],
+  extends: ['./eslint-base.js', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
   settings: {
     react: {
       version: 'detect',

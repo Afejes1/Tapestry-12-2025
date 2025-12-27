@@ -6,7 +6,8 @@
     "module": "CommonJS",
     "lib": ["ES2020"],
     "types": ["node"],
-    "composite": true
+    "composite": true,
+    "noEmit": false
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
