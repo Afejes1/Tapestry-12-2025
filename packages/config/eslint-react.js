@@ -1,0 +1,22 @@
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  plugins: ['react', 'react-hooks'],
+  extends: ['./eslint-base.js', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
+  },
+};
